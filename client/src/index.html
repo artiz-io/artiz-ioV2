@@ -97,6 +97,16 @@
                     <a class="button transparent_red" href="#product">Learn more</a>
                     <a class="button transparent_red" href="#tokensale">Contribute</a>
                 </div>
+                <div class="col-12 d-flex flex-column align-items-center justify-content-start">
+                    <form id="subscriptionForm" method="post" action="/api/subscriptions/add">
+                        <h4>Subscribe to get the latest news and updates.<br />
+                        No spam, we promise.</h4>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Your e-mail address">
+                        </div>
+                        <input type="submit" class="button transparent_red" value="Subscribe" />
+                    </form>
+                </div>
             </section>
             <!-- Stop tokensale -->
 
@@ -372,7 +382,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/default.css?{{token}}">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="bower_components/jquery.countdown/dist/jquery.countdown.min.js" integrity="sha384-7YJwK4FAGCi2soEP7g3v8myqDvUnb6lnbRjgOGe4Tf+LqoiEbtJLfX41zYKGCs4F" crossorigin="anonymous"></script>

@@ -7,6 +7,37 @@ $(document).ready(function() {
 
   });
 
+  // subscribe
+  $("#subscriptionForm").submit(function(event) {
+
+    // preventDefault
+    event.preventDefault();
+
+    // submit form
+    var form = $(this);
+    var url = form.attr("action");
+    var email = form.find("input[name='email']");
+    var button = form.find("input[type='submit']");
+
+    // submit
+    $.post(url, {
+        email: email.val()
+      })
+      .done(function() {
+
+        $(button).addClass('success')
+        $(button).val('You are now subscribed!')
+
+      })
+      .fail(function() {
+
+        $(button).addClass('error')
+        $(button).val('Something went wrong...')
+
+      })
+
+  });
+
   // countdown
   $('.countdown').countdown(new Date(new Date().getTime() + 1000 * 60 * 60 * 24 + 1000 * 10), {
       elapse: true
