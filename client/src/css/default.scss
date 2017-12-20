@@ -4,6 +4,25 @@ $default-block-height: 500px;
 /* Imports */
 @import 'colors';
 
+@keyframes flashSuccess {
+	0% {
+		background: $artiz-text-white;
+	}
+	100% {
+		background-color: transparent;
+	}
+}
+
+@keyframes flashError {
+	0% {
+		background: $artiz-solid-red;
+	}
+	100% {
+		background-color: transparent;
+	}
+}
+
+
 /* Start tokensale */
 .tokensale {
 
@@ -131,13 +150,81 @@ $default-block-height: 500px;
 
 	.buttons {
 
-		margin-bottom: 250px;
+		margin-bottom: 60px;
 
 		> .button {
 
 	    	margin: 15px;
 
 	    }
+
+    }
+
+    #subscriptionForm {
+
+    	margin-bottom: 50px;
+
+    	h4 {
+
+    		font-size: 16px;
+    		text-align: center;
+    		line-height: 20px;
+
+    		color: $artiz-text-white;
+
+    		font-weight: 100px;
+    		letter-spacing: 0.3px;
+
+    	}
+
+    	input[type="email"] {
+
+    		text-align: center;
+    		background-color: transparent;
+    		border-radius: 0;
+    		border: 0;
+    		border-bottom: 2px solid $artiz-text-white;
+    		color: $artiz-text-white;
+
+    		font-weight: 100;
+    		letter-spacing: 2px;
+
+    		text-transform: uppercase;
+
+    		width: 100%;
+    		font-size: 17px;
+
+    		margin: auto;
+    		margin-top: 30px;
+
+    		&::placeholder {
+
+				color: $artiz-text-white;
+
+			}
+
+    	}
+
+    	.button {
+
+    		margin: auto;
+    		margin-top: 30px;
+
+    		&.success {
+
+    			animation: flashSuccess linear 500ms;
+				animation-iteration-count: 1;
+
+    		}
+
+    		&.error {
+
+    			animation: flashError linear 500ms;
+				animation-iteration-count: 1;
+
+    		}
+
+    	}
 
     }
 
@@ -172,6 +259,7 @@ $default-block-height: 500px;
 	    background-image: url('../images/rocket_1.svg');
 	    background-origin: top left;
 	    background-position: calc(50vw + 5% + 20px + 30px) 0px;
+	    background-position: calc(50vw + 5% + 20px + 60px) 0px;
 	    background-repeat: no-repeat;
 	    background-size: 380px;
 	    z-index: 80;
