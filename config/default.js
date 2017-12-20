@@ -3,6 +3,10 @@ module.exports = {
     domain: 'localhost',
     port: 3000
   },
+  auth: {
+    username: 'admin',
+    password: 'admin'
+  },
   datasources: {
     mongo: {
       url: '***REMOVED***'
@@ -22,6 +26,10 @@ module.exports = {
     bindings: {
       "info": {
         bind: "/",
+        versions: ["v1"]
+      },
+      "subscribe": {
+        bind: "/subscriptions",
         versions: ["v1"]
       }
     }
