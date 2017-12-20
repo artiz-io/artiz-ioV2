@@ -192,12 +192,16 @@ $default-block-height: 500px;
     		text-transform: uppercase;
 
     		width: 100%;
-    		font-size: 17px;
+    		font-size: 80%;
 
     		margin: auto;
     		margin-top: 30px;
 
     		outline: none !important;
+    		-moz-appearance: none;
+
+    		-webkit-box-shadow: none;
+		    outline: -webkit-focus-ring-color auto 5px;
 
     		&::placeholder {
 
@@ -205,8 +209,14 @@ $default-block-height: 500px;
 
 			}
 
-			&:focus {
+			&:-moz-focusring {
+
 				outline: none;
+
+			}
+
+			&:focus {
+				outline: none !important;
 				border-color: $artiz-solid-blue;
 			}
 
