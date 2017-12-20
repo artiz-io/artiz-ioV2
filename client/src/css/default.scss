@@ -150,11 +150,11 @@ $default-block-height: 500px;
 
 	.buttons {
 
-		margin-bottom: 60px;
+		margin-bottom: 50px;
 
 		> .button {
 
-	    	margin: 15px;
+	    	margin: 25px;
 
 	    }
 
@@ -197,10 +197,17 @@ $default-block-height: 500px;
     		margin: auto;
     		margin-top: 30px;
 
+    		outline: none !important;
+
     		&::placeholder {
 
 				color: $artiz-text-white;
 
+			}
+
+			&:focus {
+				outline: none;
+				border-color: $artiz-solid-blue;
 			}
 
     	}
