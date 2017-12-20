@@ -1,6 +1,9 @@
 # Before installing
 Make sure you have Node, Gulp and Bower installed globally.
 
+# Outdated
+This readme is outdated and will be updated soon
+
 # Install
 Run `npm install` to install all dependencies. `npm install` generates a `node_modules` folder and the `dist` folder. The `dist` folder can be used to serve the website.
 
