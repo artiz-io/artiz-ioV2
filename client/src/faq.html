@@ -20,6 +20,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/header.css?{{token}}">
     </head>
     <body data-spy="scroll" data-target="#navbarItems" data-offset="0">
 
@@ -27,7 +28,7 @@
 
             <!-- Start nav -->
             <nav class="main navbar mr-auto navbar-expand-lg navbar-light" id="navbar">  
-                <a href="https://www.artiz.io" class="navbar-brand logo">
+                <a href="/" class="navbar-brand logo">
                     <div class="logoContainer">
                         <img src="./images/logo.svg" alt="Artiz Logo" /><span class="logo_text">ARTIZ</span>
                     </div>
@@ -35,6 +36,15 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mr-auto items" id="navbarItems">
+                        <li class="nav-item"><a data-scroll class="nav-link" href="/#product">Product</a></li>
+                        <li class="nav-item"><a data-scroll class="nav-link" href="/#token">Token</a></li>
+                        <li class="nav-item"><a data-scroll class="nav-link" href="/#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+
             </nav>
             <!-- Stop nav -->
 
