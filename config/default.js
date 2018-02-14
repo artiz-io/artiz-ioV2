@@ -9,7 +9,7 @@ module.exports = {
   },
   datasources: {
     mongo: {
-      url: '***REMOVED***'
+      url: 'mongodb://localhost/db1'
     },
     redis: {
       url: 'redis://localhost',
